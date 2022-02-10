@@ -69,6 +69,11 @@ a {
   font-size: 22px;
   font-weight: 700;
   line-height: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.logo:hover {
+  opacity: 0.5;
 }
 
 
@@ -86,6 +91,11 @@ a {
 .header_icons {
   width: 16px;
   height: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.header_icons:hover {
+  opacity: 0.5;
 }
 .header_icons img {
   width: 100%;
@@ -94,9 +104,6 @@ a {
 }
 
 
-.burger.active {
-  transform: rotateY(180deg);
-}
 .burger {
   width: 18px;
   height: 12px;
@@ -104,10 +111,14 @@ a {
   position: relative;
   z-index: 2;
   transition: 0.3s ease;
+  cursor: pointer;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.burger:hover {
+  opacity: 0.5;
 }
 
 .burger.active
@@ -176,16 +187,21 @@ a {
 }
 
 .links {
+  width: fit-content;
+
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
   color: #333;
+  transition: 0.3s ease;
 
   text-transform: uppercase;
 
   margin-bottom: 30px;
 }
-
+.links:hover {
+  opacity: 0.5;
+}
 
 
 
