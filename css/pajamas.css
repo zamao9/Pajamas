@@ -1,0 +1,201 @@
+body {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  font-weight: 300;
+
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+/* INTRO */
+.intro {
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+
+/* HEADER */
+.header.active {
+
+}
+.header {
+  width: 100%;
+
+  position: fixed;
+  z-index: 100;
+
+  background: #fff;
+}
+
+
+
+.header_content {
+  width: 100%;
+  max-width: 1390px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px;
+  margin: 0 auto;
+}
+
+
+
+.logo {
+  color: #000;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+
+
+.header_items {
+  width: 50%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.header_icons {
+  width: 16px;
+  height: 16px;
+}
+.header_icons img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+
+.burger.active {
+  transform: rotateY(180deg);
+}
+.burger {
+  width: 18px;
+  height: 12px;
+
+  position: relative;
+  z-index: 2;
+  transition: 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.burger.active
+.burger_items {
+  background: none;
+}
+.burger_items {
+  width: 100%;
+  height: 1px;
+
+  position: relative;
+
+  background-color: #333;
+}
+
+.burger_items:before,
+.burger_items:after {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  content: '';
+  transition: 0.3s ease;
+
+  background-color: #333;
+}
+
+.burger.active
+.burger_items:before {
+  transform: rotate(45deg);
+  bottom: 0;
+}
+.burger_items:before {
+  bottom: 6px;
+}
+
+.burger.active
+.burger_items:after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+.burger_items:after {
+  top: 6px;
+}
+
+
+.nav.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.nav {
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #fff;
+  padding: 80px 30px 40px;
+}
+
+.links {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #333;
+
+  text-transform: uppercase;
+
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
